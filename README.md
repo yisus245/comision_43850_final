@@ -27,6 +27,6 @@ DEPENDECIAS PARA CORRER EL PROYECTO
 `cd Proyectofinal`
 `npm rum start`   
 Adjuto fotos de la base de datos creada en Firebase
-![fotos de la creacion y inf de la base de datos]()
+![fotos de la creacion y inf de la base de datos](https://github.com/yisus245/comision_43850_final/blob/main/Proyectofinal/src/img/Captura%20de%20pantalla%202023-08-20%20225001.png)
 adjunto repositorio original con todos los cambios y correciones de las clases anteriores
 https://github.com/yisus245/comision-43850
