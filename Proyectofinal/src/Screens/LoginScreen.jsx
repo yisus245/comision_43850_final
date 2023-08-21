@@ -44,14 +44,15 @@ const LoginScreen = ({ navigation }) => {
       try {
         if (resultSignIn.isSuccess) {
           //Insert session in SQLite database
-          /* console.log('inserting Session');
-                    const response = await insertSession({
-                        email: resultSignIn.data.email,
-                        idToken: resultSignIn.data.idToken,
-                        localId: resultSignIn.data.localId,
-                    })
-                    console.log('Session inserted: ');
-                    console.log(response); */
+          console.log("inserting Session");
+          const response = await insertSession({
+            idToken: resultSignIn.data.idToken,
+            localId: resultSignIn.data.localId,
+            email: resultSignIn.data.email,
+          });
+          console.log("Session inserted: ");
+          console.log(response);
+
           dispatch(
             setUser({
               email: resultSignIn.data.email,
@@ -110,7 +111,7 @@ const styles = StyleSheet.create({
     flexDirection: "column",
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: "#FDF8ED",
+    backgroundColor: "#FFF3DA",
     gap: 15,
     paddingVertical: 20,
     borderRadius: 10,
